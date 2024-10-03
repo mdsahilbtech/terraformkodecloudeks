@@ -10,6 +10,11 @@ variable "cluster_name" {
   description = "Name of the cluster"
   default     = "myeks"
 }
+variable "cluster_version" {
+  type        = string
+  description = "Name of the cluster version"
+  default     = "1.24"
+}
 
 # KK Playground. Cluster role must be called 'eksClusterRole'
 variable "cluster_role_name" {
