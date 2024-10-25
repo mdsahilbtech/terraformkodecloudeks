@@ -8,5 +8,6 @@ resource "aws_db_instance" "mysqldb" {
   password             = "foobarbaz"
   parameter_group_name = "default.mysql8.0"
   skip_final_snapshot  = true
-  performance_insights_enabled = true
+  #performance_insights_enabled = true
+  #performance_insights_retention_period = 7
 }
